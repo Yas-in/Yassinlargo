@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "arial";
+}
+
+header {
+  align-items: center;
+  background-color: rgb(252, 252, 252);
+  justify-content: space-between;
+}
+p {
+  text-align: justify;
+}
+
+.titree {
+  font-size: 1em;
+  font-style: bold;
+  background-color: rgb(128 142 168);
+  font-style: italic;
+}
+
+.tente {
+  width: 100%;
+  height: 600px;
+  margin: 0px;
+  padding: 0;
+}
+
+.balise {
+  float: left;
+  height: 5em;
+  display: flex;
+}
+
+.titre {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  margin: 30 5px;
+  color: rgb(3, 3, 3);
+}
+
+.menu {
+  float: right;
+  color: rgb(5, 5, 5);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+ul,
+li {
+  display: inline;
+  margin: 5px;
+}
+
+.conteneur {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding: 5rem;
+}
+
+section {
+  flex: 2;
+}
+
+section,
+aside {
+  background-color: #d1ded7;
+  margin: 15px;
+  padding: 20px;
+}
+
+.un {
+  float: left;
+  margin: 20px;
+  height: 20em;
+}
+
+.deux {
+  float: right;
+  margin: 20px;
+  height: 20em;
+}
+
+aside {
+  flex: 1;
+}
+
+aside ul {
+  flex-direction: column;
+  display: flex;
+}
+
+aside li {
+  flex: 1;
+  align-self: stretch;
+  margin: 5px;
+  padding: 10px;
+  background: #ffffff;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: rgb(253, 252, 252);
+  color: #020202;
+  padding: 2rem 0;
+}
+
+.upper-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+  align-self: stretch;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  align-items: center;
+}
+
+.sitemap ul {
+  display: flex;
+  flex-direction: column;
+  text-decoration: underline;
+}
+
+.socials i {
+  margin: 10px;
+}
+
+.fb,
+.gg,
+.tw {
+  height: 1.5em;
+}
+
+.logo {
+  position: fixed;
+  background: white;
+  display: flex;
+  bottom: 34px;
+  right: 40px;
+  width: 62px;
+  height: 61px;
+  border-radius: 57%;
+  font-size: 3rem;
+}
+
+.logo::before {
+  content: "\2708";
+  color: black;
+  padding: -3px;
+  margin: -3px;
+  margin-left: 6px;
+  margin-right: 0px;
+}
+.année {
+  background-color: #d1ded7;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+
+.p1 {
+  font-style: bold;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  section .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .big-title {
+    font-size: 3rem;
+  }
+
+  .text {
+    font-size: 0.8rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+}
